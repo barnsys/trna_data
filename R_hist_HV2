@@ -1,0 +1,31 @@
+library(ape)
+
+pas1<-read.dna("HV1.phy", format="interleaved")
+pas2<-read.dna("HV2.phy", format="interleaved")
+
+d1<-as.vector(dist.dna(pas1, "raw", pairwise.deletion=T))
+d2<-as.vector(dist.dna(pas2, "raw", pairwise.deletion=T))
+
+nint<-ceiling(1+log2(length(d1)))
+
+xmax<-max(c(d1,d2))
+xmin<-min(c(d1,d2))
+
+int<-(xmax-xmin)/nint
+vint<-rep(0, (nint+1))
+vint[1]<-xmin
+vint[nint+1]<-xmax
+for(i in 2:(nint)) vint[i]<-vint[i-1]+int
+
+xl<-c(xmin-0.15*xmin, xmax+0.1*xmax)
+
+h1<-hist(d1, breaks=vint, plot=F)
+h2<-hist(d2, breaks=vint, plot=F)
+
+par(mfrow=c(2,1))
+plot(h1, xlim=xl)
+plot(h2, xlim=xl)
+
+tab<-data.frame(h1=h1$counts, h2=h2$counts)
+
+fisher.test(tab) 
