@@ -2,7 +2,7 @@ Description of the data set and scripts in the programming language R for the an
 
 tRNAs_alignment.fas – Alignment of mitochondrial coding tRNAs of Baikalian amphipods used for Bayesian phylogenetic inference.
 
-mt_proteins_alignment.fas – Alignment of 13 concatenated mitochondrial PCG amino acid sequences.
+mt_proteins_alignment.fas – Alignment of 13 concatenated mitochondrial PCG amino acid sequences for Bayesian phylogenetic inference.
 
 
 
