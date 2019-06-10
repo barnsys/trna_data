@@ -1,40 +1,13 @@
-Description of the data set and scripts in the programming language R for the analysis of mitochondrial transport RNAs of Baikal amifipods.
+Bioinformatic tools for tRNA gene sequences datasets:  the script for isoacceptor tRNA identification based on genetic distances and the script for choosing optimal alignment of tRNA genes and other sequences
 
-tRNAs_alignment.fas – Alignment of mitochondrial coding tRNAs of Baikalian amphipods used for Bayesian phylogenetic inference.
+Amphipod-specific_CMs.zip - archive with the amphipod-specific models for searching of  tRNA genes in mt genomes using MiTFi.
 
-mt_proteins_alignment.fas – Alignment of 13 concatenated mitochondrial PCG amino acid sequences for Bayesian phylogenetic inference.
+script_best_alignment.zip  - archive that contains R script for testing the best sequence alignment, its input and output files. We  developed R script for estimation of the best mode of sequence alignments, which was applied to access the best alignment of tRNA genes in, but it is also suitable for testing of any nucleotide or aminoacid alignments sets used in phylogenetic inferences. 
 
+script_gen_distances.zip -   archive that contains R script estimation of tested tRNA gene sequence resemblance to certain isoacceptor type, its input and output files. We developed R script automating the diagnosis the ancestor tRNA gene coding specificity regardless their anticodon sequence based on genetic distances comparison. 
 
+tRNA_gene_annotation_amphipods.xlsx – The file contains annotation of tRNA genes in mt genomes of amphipods performed by Mitfi using both metazoan and amphipod-specific models.
 
-Input files and R scripts for Pairwise identity analysis (Input files -scripts - description)
+CM_analysis_metazoan_models.xlsx – The file contains the result of covariance model (cm) scoring analysis of  amphipods tRNA genes based on metazoan models implemented in the Infernal software package (Nawrocki and Eddy 2013).
 
-D1.phy, D2.phy - R_hist_DD - Test for origination of trnD2 of A.victorii
-
-HD1.phy, HD2.phy - R_hist_HD2 - Test for origination of trnD2 of A.victorii
-
-HQ1.phy, HQ2.phy - R_hist_HQ2 - Test for origination of trnQ2 of G.fasciatus
-
-HV1.phy, HV2.phy - R_hist_HV2 - Test for origination of trnV2 of G.fasciatus
-
-I1.phy, I2.phy - R_hist_II - Test for origination of trnF/I of P.kesslerii
-
-L1.phy, L2.phy - R_hist_LL - Test for origination of trnL1-1 and trnL1-2 of G.cabanisii
-
-LP1.phy, LP2.phy - R_hist_LP2 - Test for origination of trnP2 of E.vittatus
-
-P1.phy, P2.phy - R_hist_PP - Test for origination of trnP2 of E.vittatus
-
-Q1.phy, Q2.phy - R_hist_QQ - Test for origination of trnQ2 of G.fasciatus
-
-psi_FI1.phy, psi_FI2.phy - R_hist_FI - Test for origination of trnF/I of P.kesslerii
-
-VV1.phy, VV2.phy - R_hist_VV - Test for origination of trnV2 of G.fasciatus
-
-WI1.phy, WI2.phy - R_hist_WI - Test for origination of trnF/I of P.kesslerii
-
-
-
-
-Input files and R script for Likelihood ratio test (Input files - scripts)
-
-trees-1.txt, trees-2.txt - scriptV2.txt
+tRNA_gene_annotation_amphipods.xlsx– The file contains the result of covariance model (cm) scoring analysis of  amphipods tRNA genes performed by Infernal and based on amphipod-specific models.
