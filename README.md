@@ -1,4 +1,4 @@
-Bioinformatic tools for tRNA gene sequences datasets:  the script for isoacceptor tRNA identification based on genetic distances and the script for choosing optimal alignment of tRNA genes and other sequences
+Bioinformatic tools for tRNA genes analyses in mitochondrial DNA sequence data
 
 Amphipod-specific_CMs.zip - archive with the amphipod-specific models for searching of  tRNA genes in mt genomes using MiTFi.
 
